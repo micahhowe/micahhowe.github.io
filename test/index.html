@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Matching Game</h1>
+        </header>
+
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+        	<span class="moves">4</span> Moves
+
+          <div class="timer">
+          </div>
+
+            <div class="restart" onclick=document.location.reload()>
+        		    <i class="fas fa-redo-alt"></i>
+        	</div>
+        </section>
+
+        <ul class="deck" id="card-deck">
+            <li class="card" type="game">
+                <i class="fas fa-gamepad"></i>
+            </li>
+            <li class="card" type="droid">
+                <i class="fab fa-android"></i>
+            </li>
+            <li class="card" type="thumb">
+                <i class="far fa-thumbs-up"></i>
+            </li>
+            <li class="card" type="bolt">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card" type="github">
+                <i class="fab fa-github-alt"></i>
+            </li>
+            <li class="card" type="thumb">
+                <i class="far fa-thumbs-up"></i>
+            </li>
+            <li class="card" type="ship">
+                <i class="fas fa-space-shuttle"></i>
+            </li>
+            <li class="card" type="apple">
+                <i class="fab fa-apple"></i>
+            </li>
+            <li class="card" type="droid">
+                <i class="fab fa-android"></i>
+            </li>
+            <li class="card" type="poo">
+                <i class="fas fa-poo"></i>
+            </li>
+            <li class="card" type="ship">
+                <i class="fas fa-space-shuttle"></i>
+            </li>
+            <li class="card" type="poo">
+                <i class="fas fa-poo"></i>
+            </li>
+            <li class="card" type="bolt">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card" type="apple">
+                <i class="fab fa-apple"></i>
+            </li>
+            <li class="card" type="game">
+                <i class="fas fa-gamepad"></i>
+            </li>
+            <li class="card" type="github">
+                <i class="fab fa-github-alt"></i>
+            </li>
+        </ul>
+
+        <div id="popup" class="overlay">
+          <div class="popup">
+            <h2>Huzzah</h2>
+            <a class="close" href=# >X</a>
+            <div class="content-1">
+              Huzzah! You are a winner 👑
+            </div>
+            <div class="content-2">
+              <p>You made <span id=finalMove></span> moves</p>
+              <p>in <span id=totalTime> </span> </p>
+              <p>Rating: <span id=starRating></span></p>
+            </div>
+            <button id="play-again" onclick="playAgain()">
+              Play again? 😃</a>
+            </button>
+        </div>
+    </div>
+
+  </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
